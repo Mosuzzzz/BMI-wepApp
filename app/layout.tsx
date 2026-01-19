@@ -28,7 +28,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          {children}
+          <footer className="w-full py-4 text-center text-sm text-gray-500 bg-white border-t border-gray-100">
+            67162110050-9
+          </footer>
+        </AuthProvider>
       </body>
     </html>
   );
