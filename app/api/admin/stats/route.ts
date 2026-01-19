@@ -26,10 +26,10 @@ export async function GET(req: Request) {
 
     const averageBMI =
       records.length > 0
-        ? records.reduce((acc: number, curr) => acc + curr.bmi, 0) / records.length
+        ? records.reduce((acc: number, curr: { bmi: number }) => acc + curr.bmi, 0) / records.length
         : 0;
 
-    const categoryDistribution = records.reduce((acc, curr) => {
+    const categoryDistribution = records.reduce((acc: Record<string, number>, curr: { category: string }) => {
       acc[curr.category] = (acc[curr.category] || 0) + 1;
       return acc;
     }, {} as Record<string, number>);
