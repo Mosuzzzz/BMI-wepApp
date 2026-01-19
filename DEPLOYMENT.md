@@ -42,5 +42,5 @@ After deployment, your database might be empty. You need to apply migrations and
 
 ## Troubleshooting
 
-*   **Middleware/Proxy Issues**: Ensure your middleware file is named `middleware.ts` in the root or `src/` directory.
+*   **Middleware/Proxy Issues**: Ensure your proxy file is named `proxy.ts` in the root or `src/` directory (Next.js 16+ convention).
 *   **Build Failures**: Check the Vercel build logs. Common issues include missing environment variables or TypeScript errors.
