@@ -20,8 +20,18 @@ export async function POST(req: Request) {
       );
     }
 
-    const heightInMeters = height / 100;
-    const bmi = weight / (heightInMeters * heightInMeters);
+    const numWeight = parseFloat(weight);
+    const numHeight = parseFloat(height);
+
+    if (isNaN(numWeight) || isNaN(numHeight) || numWeight <= 0 || numHeight <= 0) {
+      return NextResponse.json(
+        { message: "Invalid weight or height values" },
+        { status: 400 }
+      );
+    }
+
+    const heightInMeters = numHeight / 100;
+    const bmi = numWeight / (heightInMeters * heightInMeters);
     let category = "";
 
     if (bmi < 18.5) category = "Underweight";
