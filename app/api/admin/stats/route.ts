@@ -26,7 +26,7 @@ export async function GET(req: Request) {
 
     const averageBMI =
       records.length > 0
-        ? records.reduce((acc, curr) => acc + curr.bmi, 0) / records.length
+        ? records.reduce((acc: number, curr) => acc + curr.bmi, 0) / records.length
         : 0;
 
     const categoryDistribution = records.reduce((acc, curr) => {
