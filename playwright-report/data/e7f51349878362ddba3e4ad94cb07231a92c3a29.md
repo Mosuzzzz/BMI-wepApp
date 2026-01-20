@@ -1,0 +1,53 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e7]: BMI Tracker
+        - generic [ref=e8]:
+          - generic [ref=e9]: Hello, Test User
+          - button "Sign Out" [ref=e10]
+    - main [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - heading "Calculate BMI" [level=2] [ref=e15]
+            - paragraph [ref=e16]: Enter your current weight and height
+          - generic [ref=e17]:
+            - generic [ref=e18]:
+              - generic [ref=e19]:
+                - generic [ref=e20]: Weight (kg)
+                - spinbutton [ref=e21]
+              - generic [ref=e22]:
+                - generic [ref=e23]: Height (cm)
+                - spinbutton [ref=e24]
+            - button "Calculate & Save" [active] [ref=e25]
+        - generic [ref=e26]:
+          - heading "Latest BMI" [level=3] [ref=e27]
+          - generic [ref=e28]: "23.1"
+          - generic [ref=e29]: Normal
+          - paragraph [ref=e30]: Recorded on 1/20/2026
+      - generic [ref=e31]:
+        - heading "Recent Measurements" [level=2] [ref=e33]
+        - table [ref=e35]:
+          - rowgroup [ref=e36]:
+            - row "Date Weight (kg) Height (cm) BMI Category" [ref=e37]:
+              - columnheader "Date" [ref=e38]
+              - columnheader "Weight (kg)" [ref=e39]
+              - columnheader "Height (cm)" [ref=e40]
+              - columnheader "BMI" [ref=e41]
+              - columnheader "Category" [ref=e42]
+          - rowgroup [ref=e43]:
+            - row "1/20/2026 75 180 23.1 Normal" [ref=e44]:
+              - cell "1/20/2026" [ref=e45]
+              - cell "75" [ref=e46]
+              - cell "180" [ref=e47]
+              - cell "23.1" [ref=e48]
+              - cell "Normal" [ref=e49]
+  - contentinfo [ref=e50]: 67162110050-9
+  - button "Open Next.js Dev Tools" [ref=e56] [cursor=pointer]:
+    - img [ref=e57]
+  - alert [ref=e60]
+```

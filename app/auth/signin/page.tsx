@@ -94,6 +94,25 @@ export default function SignIn() {
             </Link>
           </p>
         </div>
+
+        <div className="mt-8 pt-6 border-t border-gray-100">
+          <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-600">
+            <p className="font-semibold text-gray-800 mb-2">Demo Account:</p>
+            <div className="space-y-1">
+              <p><span className="font-medium">Email:</span> user@domain.com</p>
+              <p><span className="font-medium">Password:</span> user1234</p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 pt-6 border-t border-gray-100">
+          <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-600">
+            <p className="font-semibold text-gray-800 mb-2">Admin Account:</p>
+            <div className="space-y-1">
+              <p><span className="font-medium">Email:</span> admin@example.com</p>
+              <p><span className="font-medium">Password:</span> adminpassword</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

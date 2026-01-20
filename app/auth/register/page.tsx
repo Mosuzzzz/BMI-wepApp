@@ -98,15 +98,15 @@ export default function Register() {
           </button>
         </form>
 
-        <div className="text-center mt-6">
-          <p className="text-sm text-gray-600">
-            Already have an account?{" "}
-            <Link href="/auth/signin" className="font-medium text-blue-600 hover:text-blue-500 hover:underline">
-              Sign In
-            </Link>
-          </p>
+          <div className="text-center mt-6">
+            <p className="text-sm text-gray-600">
+              Already have an account?{" "}
+              <Link href="/auth/signin" className="font-medium text-blue-600 hover:text-blue-500 hover:underline">
+                Sign in
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
